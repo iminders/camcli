@@ -2,10 +2,8 @@ version: '3.0'
 
 services:
   test:
-    image: aiminders/bazel:latest
-    environment:
-      TUSHARE_TOKEN: ${TUSHARE_TOKEN}
+    image:  python:3.7-alpine
     command:
-      bash /root/fila/docker-compose.sh
+      bash /root/camcli/docker-compose.sh
     volumes:
-      - .:/root/fila
+      - .:/root/camcli

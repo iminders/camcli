@@ -3,4 +3,4 @@ cd "$(dirname "$0")"
 echo `pwd`
 
 cd camcli
-python3 -m pytest
+python -m pytest
