@@ -6,15 +6,16 @@ with open("README.md", "r") as fh:
 
 def read_install_requires():
     reqs = [
-        'requests'
+        'requests',
+        'pytest'
     ]
     return reqs
 
 
-setup(name='cambrian',
+setup(name='camcli',
       version='0.0.1',
-      description='',
-      url='https://github.com/iminders/cambrian',
+      description='camcli',
+      url='https://github.com/iminders/camcli',
       author='liuwen',
       author_email='liuwen.w@qq.com',
       long_description=long_description,

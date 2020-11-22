@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  test:
+    image: aiminders/bazel:latest
+    environment:
+      TUSHARE_TOKEN: ${TUSHARE_TOKEN}
+    command:
+      bash /root/fila/docker-compose.sh
+    volumes:
+      - .:/root/fila
