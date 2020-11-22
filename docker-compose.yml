@@ -4,6 +4,6 @@ services:
   test:
     image:  python:3.7-alpine
     command:
-      bash /root/camcli/docker-compose.sh
+      sh /root/camcli/docker-compose.sh
     volumes:
       - .:/root/camcli
